@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: steelblue;
+    color: black;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header, footer {
+    background-color: darkblue;
+    color: white;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
