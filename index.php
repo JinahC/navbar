@@ -12,11 +12,11 @@
             <form action="signup.php" method="POST">
                 <h3>The Navbar Journal</h3>
                 <label for="first_name">First Name</label><br>
-                <input type="text" id="first_name" name="user_fname"><br><br>
+                <input type="text" id="first_name" name="user_fname" required><br><br>
                 <label for="last_name">Last Name</label><br>
-                <input type="text" id="last_name" name="user_lname"><br><br>
+                <input type="text" id="last_name" name="user_lname" required><br><br>
                 <label for="email">Email</label><br>
-                <input type="text" id="email" name="user_email"><br><br>
+                <input type="text" id="email" name="user_email" required><br><br>
                 <input type="submit" name="submit" value="Sign Up!">
             </form>
         </div>
