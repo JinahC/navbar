@@ -8,26 +8,21 @@ if (isset($_POST["user_fname"]) && isset($_POST["user_lname"]) && isset($_POST["
 
     saveNewSignup($fname, $lname, $email);
 }
-else {
-    header("Location: index.php");
-    die;
-}
-
 
 include "templates/header.php"; 
 ?>
 
 <!-- CONTENT -->
-<div class="container-h">
+<div class="content-container">
 <div class="bg-img"></div>
 <div class="content">
     <div class="row">
-        <div class="col-lg-8 col-sm-12">
-            <h1>Welcome to NAVBAR</h1>
+        <div class="col-lg-7 col-sm-12 text-sm-center text-md-center mb-2">
+            <h1>Welcome to <span class="brand-font">NAVBAR</span></h1>
             <p>Get ready for the newest bar on the block. Be the first to learn about our <strong>GRAND OPENING</strong> by signing up to join our newsletter, The NAVBAR Journal. You won't want to miss out!</p>
             <h2 class="neon-sign">COMING SOON</h2>
         </div>
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-5 col-sm-12">
             <div class="flex justify-content-center my-2">
                 <form action="signup.php" method="POST">
                     <h3 class="brand-font form-header">The NAVBAR Journal</h3>
