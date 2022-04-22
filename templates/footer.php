@@ -10,7 +10,7 @@
         <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(63, 120, 241)" />
         </g>
     </svg>
-    <div class="footer-content pt-4 pb-2">
+    <div class="footer-content py-4 pb-2">
         <h1 class="font-brand mb-0">navbar<span class="iconify mx-1 align-top" data-icon="ant-design:trademark-circle-outlined" style="color: white; font-size: 25px;"></span></h1>
         <p class="mb-1">1441 Sailor St, Ft. Lauderdale, FL 33311</p>
         <div class="row justify-content-center">
