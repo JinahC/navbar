@@ -6,3 +6,11 @@ function saveNewSignup($fname, $lname, $email) {
 
     fclose($file);
 }
+
+function displayMenu() {
+    return;
+}
+
+function displayBoxes() {
+    return;
+}
