@@ -1,0 +1,17 @@
+@import "_mixins";
+
+@include fonts;
+@include body;
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@include header;
+
+
+
+.waves {
+    @include waves();
+}

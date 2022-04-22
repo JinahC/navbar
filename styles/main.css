@@ -1,0 +1,82 @@
+.font-brand {
+  font-family: "Rowdies", cursive; }
+
+.font-display {
+  font-family: "Sacramento", cursive; }
+
+.font-san-serif {
+  font-family: "Raleway", sans-serif; }
+
+body {
+  background-color: #1563AA;
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+header {
+  background-color: #050B52;
+  margin: 0; }
+
+header .nav-item {
+  font-family: "Rowdies", cursive;
+  font-size: 20px;
+  color: #FFF;
+  text-transform: uppercase; }
+
+header .nav-link {
+  color: #FFF; }
+
+header .nav-link:focus,
+header .nav-link:hover {
+  text-decoration: 2px underline #FFF; }
+
+.logo {
+  max-width: 105px; }
+
+.waves {
+  /* animation */
+  /*Shrinking for mobile*/ }
+  .waves .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /* fix for safari gap */
+    min-height: 100px;
+    max-height: 150px; }
+  .waves .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; }
+  .waves .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s; }
+  .waves .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s; }
+  .waves .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s; }
+  .waves .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s; }
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0); }
+  100% {
+    transform: translate3d(85px, 0, 0); } }
+  @media (max-width: 768px) {
+    .waves .waves {
+      height: 40px;
+      min-height: 40px; } }
+
+/*# sourceMappingURL=main.css.map */
