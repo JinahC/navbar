@@ -1,3 +1,26 @@
+body, html {
+  height: 100%; }
+
+body {
+  background-color: #1563AA;
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-size: 28px; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+hr {
+  border-top: 1px solid #FFF;
+  width: 300.01px; }
+
 .font-brand {
   font-family: "Rowdies", cursive;
   text-transform: uppercase; }
@@ -9,18 +32,14 @@
 .font-san-serif {
   font-family: "Raleway", sans-serif; }
 
-body {
-  background-color: #1563AA;
-  color: #FFF;
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  padding: 0; }
+.bg-light {
+  background-color: #1563AA; }
 
-a {
-  text-decoration: none; }
+.bg-dark {
+  background-color: #050B52; }
 
-img {
-  width: 100%; }
+.bg-ocean {
+  background-color: #003F71; }
 
 .row {
   margin-left: 0;
@@ -28,7 +47,11 @@ img {
 
 header {
   background-color: #050B52;
-  margin: 0; }
+  margin: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%; }
 
 header .nav-item {
   font-family: "Rowdies", cursive;
@@ -45,6 +68,92 @@ header .nav-link:hover {
 
 .logo {
   max-width: 105px; }
+
+.billboard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.billboard-full {
+  height: 100%; }
+
+.billboard-half {
+  height: 50%; }
+
+.billboard-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.billboard-text .font-display,
+.billboard-text .font-brand {
+  font-size: 100px; }
+
+#billboard-home {
+  background-image: url("../img/billboard-ship-in-the-stars.jpg"); }
+
+#billboard-about {
+  background-image: url("../img/billboard-ship-celebration.jpg"); }
+
+#billboard-events {
+  background-image: url("../img/billboard-ship-in-the-stars.jpg"); }
+
+.filler-text {
+  font-size: 90px;
+  line-height: 40px; }
+
+.btn {
+  width: 223px;
+  padding: 10px;
+  background-color: white;
+  color: #050B52;
+  font-family: 'Rowdies';
+  font-size: 26px;
+  text-transform: uppercase;
+  border: 3px solid #050B52;
+  border-radius: 17px;
+  filter: drop-shadow(8px 8px 0px #050B52);
+  margin: auto;
+  display: block; }
+
+.btn:focus,
+.btn:hover {
+  text-decoration: none;
+  transform: translate(8px, 8px);
+  filter: none;
+  box-shadow: 0 0 20px #FFF, 0 0 15px #050B52, 0 0 25px #050B52;
+  color: #050B52; }
+
+.banner {
+  height: 60%; }
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+form {
+  width: 50%;
+  margin: auto; }
+
+label {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  text-align: left;
+  letter-spacing: 0.01em; }
+
+input[type=text] {
+  background-color: #FFF;
+  border: 3px solid #050B52;
+  border-radius: 13px;
+  width: 100%;
+  height: 47px;
+  padding-left: 5px;
+  font-size: 20px; }
 
 .waves {
   position: relative;
