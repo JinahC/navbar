@@ -1,8 +1,7 @@
 @import "_mixins";
 
-@include body;
 @include fonts;
-@include bg-colors;
+@include body;
 
 .row {
     margin-left: 0;
@@ -10,11 +9,6 @@
 }
 
 @include header;
-@include billboard;
-@include filler;
-@include button;
-@include banner;
-@include form;
 
 
 
