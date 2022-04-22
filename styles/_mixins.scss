@@ -22,10 +22,12 @@
 @mixin fonts {
     .font-brand {
         font-family: $rowdies;
+        text-transform: uppercase;
     }
 
     .font-display {
         font-family: $sacramento;
+        text-transform: lowercase;
     }
 
     .font-san-serif {
@@ -63,7 +65,7 @@
 
 
 // FOOTER
-@mixin waves() {
+@mixin footer {
     .waves {
         position:relative;
         width: 100%;
@@ -108,5 +110,11 @@
           height:40px;
           min-height:40px;
         }
+      }
+
+      .footer-content {
+          background-color: rgb(63, 120, 241);
+          text-align: center;
+        //   height: 25vh;
       }
 }
