@@ -1,4 +1,4 @@
-<footer class="pt-3">
+<footer class="bg-ocean pt-3">
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -11,8 +11,14 @@
         </g>
     </svg>
     <div class="footer-content pt-4 pb-2">
-        <h1 class="font-brand">navbar</h1>
-        <p>1441 Sailor St, Ft. Lauderdale, FL 33311</p>
+        <h1 class="font-brand mb-0">navbar<span class="iconify mx-1 align-top" data-icon="ant-design:trademark-circle-outlined" style="color: white; font-size: 25px;"></span></h1>
+        <p class="mb-1">1441 Sailor St, Ft. Lauderdale, FL 33311</p>
+        <div class="row justify-content-center">
+            <span class="iconify mx-1" data-icon="ant-design:twitter-outlined" style="color: white; font-size: 49px;"></span>            
+            <span class="iconify mx-1" data-icon="ant-design:instagram-filled" style="color: white; font-size: 49px;"></span>
+            <span class="iconify mx-1" data-icon="ant-design:phone-filled" style="color: white; font-size: 49px;"></span>
+            <span class="iconify mx-1" data-icon="ant-design:mail-filled" style="color: white; font-size: 49px;"></span>
+        </div>
     </div>
 </footer>
 
