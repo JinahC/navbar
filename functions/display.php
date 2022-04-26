@@ -46,14 +46,9 @@ function display_menu() {
     database_close();
 }
 
-function displayBoxes() {
-    return;
-}
-
 // output events to the screen
 function display_events() {
     database_connect();
-
     $results = database_grabEvents();
 
     echo "<div class='row'>";
@@ -70,5 +65,28 @@ function display_events() {
 
     echo "</div>";
 
+    database_close();
+}
+
+// output store items to the screen
+function display_store() {
+    database_connect();
+    $results = database_grabStoreItems();
+
+    echo "<div class='row'>";
+
+    while ($store = mysqli_fetch_assoc($results)) {
+        echo "
+        <div class='col-lg-4 col-md-6 col-sm-12 my-3 text-center'>
+            <img src='{$store['store_item_img']}' class='bordered-img'>
+            <h3 class='font-brand'>{$store['store_item_name']}</h3>
+            <p class='font-display'>{$store['store_item_price']}</p>
+            <a class='btn d-block' href='#' id='store-item-{$store['store_item_id']}'>add to cart</a>
+        </div>
+        ";
+    }
+
+    echo "</div>";
+    
     database_close();
 }
