@@ -60,7 +60,7 @@ CREATE TABLE navbar.store (
     store_item_name varchar(255),
     store_item_price varchar(255),
     store_item_img varchar(255),
-    PRIMARY KEY(id)
+    PRIMARY KEY(store_item_id)
 );
 
 INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (0, "coasters (set of 4)", "50.00", "img/store-coasters.jpg");
