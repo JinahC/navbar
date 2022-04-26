@@ -63,8 +63,8 @@ CREATE TABLE navbar.store (
     PRIMARY KEY(store_item_id)
 );
 
-INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (0, "coasters (set of 4)", "50.00", "img/store-coasters.jpg");
-INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (1, "cocktail tray", "75.00", "img/store-tray.jpg");
-INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (2, "shot glasses (set of 5)", "50.00", "img/store-shot-glasses.jpg");
-INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (3, "navbar crewneck", "30.00", "img/store-crewneck.jpg");
-INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (4, "navbar journal", "15.00", "img/store-journal.jpg");
+INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (0, "coasters <br>(set of 4)", "50.00", "img/store-coasters.jpg");
+INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (1, "cocktail <br>tray", "75.00", "img/store-tray.jpg");
+INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (2, "shot glasses <br>(set of 5)", "50.00", "img/store-shot-glasses.jpg");
+INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (3, "navbar <br>crewneck", "30.00", "img/store-crewneck.jpg");
+INSERT INTO navbar.store (store_item_id, store_item_name, store_item_price, store_item_img) VALUES (4, "navbar <br>journal", "15.00", "img/store-journal.jpg");
