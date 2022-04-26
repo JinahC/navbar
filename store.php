@@ -1,5 +1,6 @@
 <?php 
 include "templates/header.php"; 
+include "functions/display.php"
 ?>
 
 <!-- billboard -->
@@ -7,6 +8,11 @@ include "templates/header.php";
     <div class="billboard-text">
         <h1 class="font-brand">store</h1>
     </div>
+</div>
+
+<!-- store items -->
+<div class="container">
+    <?php display_store(); ?>
 </div>
 
 
