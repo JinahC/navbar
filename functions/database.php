@@ -18,8 +18,17 @@
     }
 
     // get all menu items of a specific type
-    function database_grabMenuItems() {
-        
+    function database_grabMenuItems($item_type) {
+        global $connection;
+
+        if ($connection != null) {
+            $query = "SELECT * FROM menu WHERE item_type = '$item_type'";
+            $results = mysqli_query($connection, $query);
+
+            if ($results && mysqli_num_rows($results) > 0) {
+                return $results;
+            }
+        }
     }
 
     // get all events
