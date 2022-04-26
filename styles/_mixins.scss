@@ -210,6 +210,54 @@
     }
 }
 
+@mixin boxes {
+    .box {
+        padding: 10px;
+        border: 2px solid $white;
+        position: relative;
+        width: auto;
+        height: 360px;
+    }
+
+    .box-img-border {
+        border: 7px solid #FFFFFF;
+        height: 100%;
+    }
+
+    .box-img {
+        filter: blur(3px);
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box-img-adj {
+        height: 360px;
+        object-fit: cover;
+    }
+
+    .box-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .box-title {
+        text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.62);
+    }
+
+    .box-desc {
+        text-shadow: 0px 4px 4px #000000;
+    }
+
+    .box-hr {
+        width: 74px;
+        border-top: 5px solid #FFFFFF;
+        box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
 @mixin form {
     form {
         width: 50%;
@@ -244,6 +292,8 @@
         object-fit: cover;
     }
 }
+
+
 
 
 // FOOTER
