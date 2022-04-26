@@ -60,6 +60,21 @@
             echo "not connected";
     }
 
+    // get all store items
+    function database_grabStoreItems(){
+        global $connection;
+
+        if ($connection != null) {
+            $query = "SELECT * FROM store";
+            $results = mysqli_query($connection, $query);
+
+            if ($results && mysqli_num_rows($results) > 0) {
+                return $results;
+            }
+        }
+    }
+
+
     function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
