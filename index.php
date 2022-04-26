@@ -30,8 +30,8 @@ include "functions/display.php";
 
 <!-- menu -->
 <div class="bg-ocean" id="menu">
-    <div class="container">
-        <?php display_menu() ?>
+    <div class="container text-center">
+        <?php display_menu(); ?>
     </div>
 </div>
     
