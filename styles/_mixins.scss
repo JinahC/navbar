@@ -234,8 +234,8 @@
     }
 }
 
-@mixin events {
-    .event-img {
+@mixin bordered {
+    .bordered-img {
         border: 10px solid $white;
         width: 350px;
         height: 350px;

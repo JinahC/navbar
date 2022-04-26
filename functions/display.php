@@ -61,7 +61,7 @@ function display_events() {
     while ($events = mysqli_fetch_assoc($results)) {
         echo "
         <div class='col-lg-4 col-md-6 col-sm-12 my-3 text-center'>
-            <img src='{$events['event_img']}' class='event-img'>
+            <img src='{$events['event_img']}' class='bordered-img'>
             <h3 class='font-brand'>{$events['event_name']}</h3>
             <p class='font-display'>{$events['event_day']} @ {$events['event_time']}</p>
         </div>
