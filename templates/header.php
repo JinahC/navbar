@@ -19,17 +19,20 @@
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="row align-items-center p-3">
         <div class="col-lg-4 justify-content-start">
-            <img class="logo" src="../navbar/img/navbar-logo.png" alt="navbar logo">
+            <a href="index.php">
+                <img class="logo" src="../navbar/img/navbar-logo.png" alt="navbar logo">
+            </a>
         </div>
         <ul class="nav col-lg-8 justify-content-around">
-            <li class="nav-item"><a class="nav-link" href="../about.php">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.php">about</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php/#menu">menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="..reservations.php">reservations</a></li>
-            <li class="nav-item"><a class="nav-link" href="../events.php">events</a></li>
+            <li class="nav-item"><a class="nav-link" href="reservations.php">reservations</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.php">events</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php/#newsletter">newsletter</a></li>
-            <li class="nav-item"><a class="nav-link" href="..store.php">store</a></li>
+            <li class="nav-item"><a class="nav-link" href="store.php">store</a></li>
             <li class="nav-item"><a class="nav-link" href="mailto:info@navbar.com">contact</a></li>
             <!-- <div class="icon-responsive" id="bars">
                 <a href="javascript:void(0);" >
