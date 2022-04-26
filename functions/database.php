@@ -9,23 +9,46 @@
         $server = "localhost";
         $username = "root";
         $password = "";
-        $database = "NAVBAR";
+        $database = "navbar";
 
         if($connection == null) {
+            // echo "i made it to the connection"
             $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
-    function database_addUser($username, $password) {
-        // Use the global connection
+    // get all menu items of a specific type
+    function database_grabMenuItems() {
+        
+    }
+
+    // get all events
+    function database_grabEvents() {
         global $connection;
 
-        if($connection != null) {
-            // Overwrite the existing password value as a hash
-            $password = password_hash($password, PASSWORD_DEFAULT);
-            // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
+        if ($connection != null) {
+            $query = "SELECT * FROM events";
+            $results = mysqli_query($connection, $query);
+
+            if ($results && mysqli_num_rows($results) > 0) {
+                return $results;
+            }
+            else {
+                echo "<h2 class='font-brand'>no events</h2>";
+                echo "<p>Check back soon to see what's happening at the <span class='font-brand'>navbar</span></p>";
+            }
+
+            // $row = mysqli_fetch_assoc($results);
+
+            // if ($row != null) {
+                // echo "row is populated";
+                // return $row;
+            // }
+            // else 
+            //  echo "not populated";
         }
+        else
+            echo "not connected";
     }
 
     function database_verifyUser($username, $password) {
