@@ -111,7 +111,7 @@ include "functions/display.php";
     
 <!-- newsletter -->
 <div class="bg-ocean" id="newsletter">
-    <form action="" method="POST" class="pt-4">
+    <form action="functions/newsletter-signup.php" method="POST" class="pt-4">
         <h3 class="text-center">subscribe to our newsletter</h3>
         <h3 class="font-brand text-center text-capitalize">the <span class="text-uppercase">navbar</span> journal</h3>
         <label for="fname">first name</label><br>
@@ -123,8 +123,5 @@ include "functions/display.php";
         <input class="btn" type="submit" name="submit" value="subscribe">
     </form>
 </div>
-
-
-
 
 <?php include "templates/footer.php" ?>
