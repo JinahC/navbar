@@ -34,7 +34,82 @@ include "functions/display.php";
         <?php display_menu(); ?>
     </div>
 </div>
+
+<!-- boxes -->
+<div class="container">
+    <div class="row">
+        <!-- book a table -->
+        <div class="col-lg-4 col-sm-12 pr-0">
+            <div class="box">
+                <div class="box-img-border">
+                    <img class="box-img" src="img/boxes-book.jpg">
+                </div>
+                <div class="box-text">
+                    <h3 class="box-title font-brand">book a table</h3>
+                    <hr class="box-hr">
+                    <p class="box-desc">reserve a seat for your trip to the bar</p>
+                    <a href="#" class="btn d-block">reserve</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 pl-0">
+            <img class="box-img-adj" src="img/boxes-book.jpg">
+        </div>
+        <!-- plan a party -->
+        <div class="col-lg-8 col-sm-12 pr-0">
+            <img class="box-img-adj" src="img/boxes-party.jpg">
+        </div>
+        <div class="col-lg-4 col-sm-12 pl-0">
+            <div class="box">
+                <div class="box-img-border">
+                    <img class="box-img" src="img/boxes-party.jpg">
+                </div>
+                <div class="box-text">
+                    <h3 class="box-title font-brand">plan a party</h3>
+                    <hr class="box-hr">
+                    <p class="box-desc">have a stellar party at our bar</p>
+                    <a href="#" class="btn d-block">plan</a>
+                </div>
+            </div>
+        </div>
+        <!-- events -->
+        <div class="col-lg-4 col-sm-12 pr-0">
+            <div class="box">
+                <div class="box-img-border">
+                    <img class="box-img" src="img/boxes-events.jpg">
+                </div>
+                <div class="box-text">
+                    <h3 class="box-title font-brand">events</h3>
+                    <hr class="box-hr">
+                    <p class="box-desc">bottoms up to a good time</p>
+                    <a href="events.php" class="btn d-block">socialize</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 pl-0">
+            <img class="box-img-adj" src="img/boxes-events.jpg">
+        </div>
+        <!-- store -->
+        <div class="col-lg-8 col-sm-12 pr-0">
+            <img class="box-img-adj" src="img/boxes-store.jpg">
+        </div>
+        <div class="col-lg-4 col-sm-12 pl-0">
+            <div class="box">
+                <div class="box-img-border">
+                    <img class="box-img" src="img/boxes-store.jpg">
+                </div>
+                <div class="box-text">
+                    <h3 class="box-title font-brand">store</h3>
+                    <hr class="box-hr">
+                    <p class="box-desc">bring a piece of the <span class="font-brand">navbar</span> home</p>
+                    <a href="store.php" class="btn d-block">shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
+<!-- newsletter -->
 <div class="bg-ocean" id="newsletter">
     <form action="" method="POST" class="pt-4">
         <h3 class="text-center">subscribe to our newsletter</h3>
