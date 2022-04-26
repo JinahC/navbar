@@ -1,4 +1,7 @@
-<?php include "templates/header.php" ?>
+<?php 
+include "templates/header.php"; 
+include "functions/display.php";
+?>
 
 <!-- CONTENT -->
 <div class=" billboard billboard-full" id="billboard-home">
@@ -7,6 +10,8 @@
         <h1 class="font-brand">navbar</h1>
     </div>
 </div>
+
+<!-- about snippet -->
 <div class="container my-4">
     <div class="row align-items-center">
         <hr class="col">
@@ -22,7 +27,13 @@
 <div class="banner">
     <img class="banner-img" style="width: 100%;" src="img/bar-bg.jpg">
 </div>
-<div class="container"></div>
+
+<!-- menu -->
+<div class="bg-ocean" id="menu">
+    <div class="container">
+        <?php display_menu() ?>
+    </div>
+</div>
     
 <div class="bg-ocean" id="newsletter">
     <form action="" method="POST" class="pt-4">
