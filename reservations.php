@@ -49,6 +49,7 @@ include "templates/header.php";
                 <img class="event-img" src="img/reservations-the-works.jpg">
             </div>
         </div>
+        <a href="#" class="btn d-block my-3">inquire now</a>
     </div>
 </div>
 
