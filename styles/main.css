@@ -41,6 +41,14 @@ hr {
 .bg-ocean {
   background-color: #003F71; }
 
+.bordered-img {
+  border: 10px solid #FFF;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  margin-bottom: 19px;
+  object-fit: cover; }
+
 .web-view {
   display: none; }
 
@@ -164,13 +172,43 @@ input[type=text] {
   padding-left: 5px;
   font-size: 20px; }
 
-.bordered-img {
-  border: 10px solid #FFF;
-  width: 350px;
-  height: 350px;
-  margin: auto;
-  margin-bottom: 19px;
+.box {
+  padding: 10px;
+  border: 2px solid #FFF;
+  position: relative;
+  width: auto;
+  height: 360px; }
+
+.box-img-border {
+  border: 7px solid #FFFFFF;
+  height: 100%; }
+
+.box-img {
+  filter: blur(3px);
+  height: 100%;
   object-fit: cover; }
+
+.box-img-adj {
+  height: 360px;
+  object-fit: cover; }
+
+.box-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.box-title {
+  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.62); }
+
+.box-desc {
+  text-shadow: 0px 4px 4px #000000; }
+
+.box-hr {
+  width: 74px;
+  border-top: 5px solid #FFFFFF;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25); }
 
 .waves {
   position: relative;
