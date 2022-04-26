@@ -62,6 +62,12 @@
     }
 }
 
+@mixin visibility {
+    .web-view {
+        display: none;
+    }
+}
+
 // HEADER
 @mixin header {
     header {
@@ -110,7 +116,7 @@
     }
 
     .billboard-half {
-        height: 50%;
+        height: 75%;
     }
 
     .billboard-text {
@@ -131,11 +137,19 @@
     }
 
     #billboard-about {
-        background-image: url("../img/billboard-ship-celebration.jpg");
+        background-image: url("../img/billboard-about.jpg");
     }
 
     #billboard-events {
-        background-image: url("../img/billboard-ship-in-the-stars.jpg");
+        background-image: url("../img/billboard-events.jpg");
+    }
+
+    #billboard-reservations {
+        background-image: url("../img/billboard-reservations.jpg");
+    }
+
+    #billboard-store {
+        background-image: url("../img/billboard-store.jpg");
     }
 }
 
@@ -217,6 +231,17 @@
         height: 47px;
         padding-left: 5px;
         font-size: 20px;
+    }
+}
+
+@mixin events {
+    .event-img {
+        border: 10px solid $white;
+        width: 350px;
+        height: 350px;
+        margin: auto;
+        margin-bottom: 19px;
+        object-fit: cover;
     }
 }
 
