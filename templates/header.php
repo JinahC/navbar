@@ -38,10 +38,10 @@
             <li class="nav-item"><a class="nav-link" href="index.php/#newsletter">newsletter</a></li>
             <li class="nav-item"><a class="nav-link" href="store.php">store</a></li>
             <li class="nav-item"><a class="nav-link" href="mailto:info@navbar.com">contact</a></li>
-            <!-- <div class="icon-responsive" id="bars">
+            <div class="icon-responsive" id="bars">
                 <a href="javascript:void(0);" >
                     <span class="iconify" data-icon="codicon:three-bars" style="color: white; font-size: 76px;"></span>
                 </a>
-            </div> -->
+            </div>
         </ul>
 </header>
