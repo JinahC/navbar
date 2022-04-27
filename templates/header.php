@@ -25,7 +25,7 @@
 
     <!-- HEADER -->
     <header class="row align-items-center p-3">
-        <div class="col-lg-4 justify-content-start">
+        <div class="col justify-content-start">
             <a href="index.php">
                 <img class="logo" src="../navbar/img/navbar-logo.png" alt="navbar logo">
             </a>
@@ -38,10 +38,10 @@
             <li class="nav-item"><a class="nav-link" href="index.php/#newsletter">newsletter</a></li>
             <li class="nav-item"><a class="nav-link" href="store.php">store</a></li>
             <li class="nav-item"><a class="nav-link" href="mailto:info@navbar.com">contact</a></li>
-            <div class="icon-responsive" id="bars">
-                <a href="javascript:void(0);" >
-                    <span class="iconify" data-icon="codicon:three-bars" style="color: white; font-size: 76px;"></span>
-                </a>
-            </div>
         </ul>
+        <div class="icon-responsive" id="bars">
+            <a href="javascript:void(0);" >
+                <span class="iconify" data-icon="codicon:three-bars" style="color: white; font-size: 90px;"></span>
+            </a>
+        </div>
 </header>
