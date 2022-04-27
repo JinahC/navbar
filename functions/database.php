@@ -74,6 +74,34 @@
         }
     }
 
+    // ..
+    function database_addSignUp($first_name, $last_name, $email) {
+        global $connection;
+
+        if ($connection != null) {
+            $query = "INSERT INTO newsletter (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
+            return mysqli_query($connection, $query);
+
+            // return database_verifySignUp($first_name, $last_name);
+        }
+    }
+
+    function database_verifySignUp($first_name, $last_name) {
+        global $connection;
+
+        if ($connection != null) {
+            $query = "SELECT email FROM newsletter WHERE first_name = '$first_name' AND last_name = '$last_name' LIMIT 1";
+            $result = mysqli_query($connection, $query);
+
+            $row = mysqli_fetch_assoc($result);
+
+            if ($row != null)
+                return true;
+            else
+                return false;
+        }
+    }
+
 
     function database_verifyUser($username, $password) {
         // Use the global connection
