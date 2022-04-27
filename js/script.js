@@ -14,10 +14,10 @@ function closeMobileNav() {
 
 // initialization
 function init() {
-    // var bars = document.getElementById("bars");
+    var bars = document.getElementById("bars");
     var x = document.getElementById("x");
 
-    // bars.addEventListener("click", showMobileNav, false);
+    bars.addEventListener("click", showMobileNav, false);
     x.addEventListener("click", closeMobileNav, false);
 }
 
