@@ -109,6 +109,12 @@ header {
 .icon-responsive {
   display: none; }
 
+@media screen and (max-width: 786px) {
+  header .nav {
+    display: none; }
+
+  .icon-responsive {
+    display: block; } }
 .billboard {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
