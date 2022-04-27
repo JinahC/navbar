@@ -1,16 +1,16 @@
 @import "_mixins";
 
-@include body;
+@include initial-styles;
 @include fonts;
 @include bg-colors;
 @include bordered;
-@include visibility;
 
 .row {
     margin-left: 0;
     margin-right: 0;
 }
 
+@include mobile-nav;
 @include header;
 @include billboard;
 @include filler;
