@@ -98,6 +98,8 @@
         text-decoration: none;
     }
 
+
+
 }
 
 // HEADER
@@ -134,6 +136,17 @@
 
     .icon-responsive {
         display: none;
+    }
+
+    // responsive behavior
+    @media screen and (max-width: $md) {
+        header .nav {
+            display: none;
+        }
+
+        .icon-responsive {
+            display: block;
+        }
     }
 }
 
