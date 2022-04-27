@@ -35,7 +35,7 @@ hr {
 .bg-light {
   background-color: #1563AA; }
 
-.bg-dark {
+.bg-navy {
   background-color: #050B52; }
 
 .bg-ocean {
@@ -49,12 +49,37 @@ hr {
   margin-bottom: 19px;
   object-fit: cover; }
 
-.web-view {
-  display: none; }
-
 .row {
   margin-left: 0;
   margin-right: 0; }
+
+#mobile-nav {
+  height: 100%;
+  background-color: #003F71;
+  position: relative;
+  display: none; }
+
+#mobile-nav .nav-item {
+  width: 100%;
+  text-align: center;
+  font-size: 25px; }
+
+#mobile-nav .nav-link:focus,
+#mobile-nav .nav-link:hover {
+  text-decoration: none; }
+
+#mobile-nav .home-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center; }
+
+#mobile-nav .home-link {
+  color: #FFF;
+  font-size: 40px; }
+
+#mobile-nav .home-link:hover {
+  text-decoration: none; }
 
 header {
   background-color: #050B52;
@@ -64,21 +89,25 @@ header {
   z-index: 10;
   width: 100%; }
 
-header .nav-item {
+.nav-item {
   font-family: "Rowdies", cursive;
   font-size: 20px;
   color: #FFF;
   text-transform: uppercase; }
 
-header .nav-link {
+.nav-link {
   color: #FFF; }
 
-header .nav-link:focus,
-header .nav-link:hover {
-  text-decoration: 2px underline #FFF; }
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: 2px underline #FFF;
+  color: #FFF; }
 
 .logo {
   max-width: 105px; }
+
+.icon-responsive {
+  display: none; }
 
 .billboard {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
