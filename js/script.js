@@ -27,9 +27,26 @@ function clearElement(el) {
     }
 }
 
+// enables submit if all input is properly formatted
+function checkSpans() {
+    var subscribe = document.getElementById("newsletter-submit");
+    var spans = document.getElementsByClassName("input-warning");
+    var clearedSpans = 0;
+
+    for (var i = 0; i < spans.length; i++) {
+        if (!spans[i].hasChildNodes())
+            clearedSpans++;
+    }
+
+    if (clearedSpans == spans.length)
+        subscribe.disabled = false;
+    else
+        subscribe.disabled = true;
+
+}
+
 // validates the input in the newsletter form
 function validateInput(e) {
-    // e.preventDefault();
     var input = e.target;
     var inputID = input.getAttribute("id");
     console.log("the input is " + input + " and the id is " + inputID);
@@ -48,6 +65,8 @@ function validateInput(e) {
             var warningText = document.createTextNode(warnings[0]);
             spans[0].appendChild(warningText);
         }
+
+        checkSpans();
     }
     // checks last name
     else if (inputID == "lname") {
@@ -58,6 +77,8 @@ function validateInput(e) {
             var warningText = document.createTextNode(warnings[1]);
             spans[1].appendChild(warningText);
         }
+
+        checkSpans();
     }
     // checks email
     else if (inputID == "email") {
@@ -68,6 +89,8 @@ function validateInput(e) {
             var warningText = document.createTextNode(warnings[2]);
             spans[2].appendChild(warningText);
         }
+
+        checkSpans();
     }
 }
 
@@ -83,12 +106,12 @@ function init() {
     var first = document.getElementById("fname");
     var last = document.getElementById("lname");
     var email = document.getElementById("email");
-    var subscribe = document.getElementById("newsletter-submit");
+    // var subscribe = document.getElementById("newsletter-submit");
 
     first.addEventListener("blur", validateInput, false);
     last.addEventListener("blur", validateInput, false);
     email.addEventListener("blur", validateInput, false);
-    // subscribe.addEventListener("click", validateInput, false);
+    // subscribe.addEventListener("click", validateAllInput, false);
 }
 
 // ...
