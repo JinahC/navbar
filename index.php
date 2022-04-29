@@ -126,7 +126,8 @@ include "functions/display.php";
         <label for="email">email</label><br>
         <input type="text" name="email" id="email"><br>
         <span class="input-warning" id="input-2"></span><br><br>
-        <input class="btn" type="submit" name="submit" id="newsletter-submit" value="subscribe">
+
+        <input class="btn" type="submit" name="submit" id="newsletter-submit" value="subscribe" disabled>
     </form>
 </div>
 
