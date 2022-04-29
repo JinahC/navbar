@@ -114,13 +114,19 @@ include "functions/display.php";
     <form action="functions/newsletter-signup.php" method="POST" class="pt-4">
         <h3 class="text-center">subscribe to our newsletter</h3>
         <h3 class="font-brand text-center text-capitalize">the <span class="text-uppercase">navbar</span> journal</h3>
+        
         <label for="fname">first name</label><br>
-        <input type="text" name="fname" id="fname"><br><br>
+        <input type="text" name="fname" id="fname"><br>
+        <span class="input-warning" id="input-0"></span><br><br>
+        
         <label for="lname">last name</label><br>
-        <input type="text" name="lname" id="lname"><br><br>
+        <input type="text" name="lname" id="lname"><br>
+        <span class="input-warning" id="input-1"></span><br><br>
+        
         <label for="email">email</label><br>
-        <input type="text" name="email" id="email"><br><br>
-        <input class="btn" type="submit" name="submit" value="subscribe">
+        <input type="text" name="email" id="email"><br>
+        <span class="input-warning" id="input-2"></span><br><br>
+        <input class="btn" type="submit" name="submit" id="newsletter-submit" value="subscribe">
     </form>
 </div>
 
