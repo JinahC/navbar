@@ -43,10 +43,18 @@ function checkSpans() {
 function validateInput(e) {
     var input = e.target;
     var inputID = input.getAttribute("id");
+
+    var warningIcon = document.createElement("span");
+    warningIcon.setAttribute("class", "iconify align-bottom");
+    warningIcon.setAttribute("data-icon", "carbon:warning");
+    warningIcon.setAttribute("style", "color: darkorange; padding: 0 5px 0 0;");
+    warningIcon.setAttribute("data-width", "25");
+    warningIcon.setAttribute("data-height", "25");
+
     console.log("the input is " + input + " and the id is " + inputID);
 
     var spans = document.getElementsByClassName("input-warning");
-    var warnings = ["Enter only letters", "Enter only letters", "Enter a vaild email"];
+    var warnings = ["Please enter only letters", "Please enter only letters", "Please enter a vaild email address"];
     var myRe = [/^[A-Za-z]+$/, /^[A-Za-z]+$/, /[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]+(\.[A-Za-z])*/];
 
     console.log("second check for id: " + inputID);
@@ -55,8 +63,14 @@ function validateInput(e) {
         console.log("im checking first name");
         clearElement(spans[0]);
 
-        if (!input.value.match(myRe[0])) {
+        if (input.value == "") {
+            var warningText = document.createTextNode("This field is required");
+            spans[0].appendChild(warningIcon);
+            spans[0].appendChild(warningText);
+        }
+        else if (!input.value.match(myRe[0])) {
             var warningText = document.createTextNode(warnings[0]);
+            spans[0].appendChild(warningIcon);
             spans[0].appendChild(warningText);
         }
 
@@ -67,8 +81,14 @@ function validateInput(e) {
         console.log("im checking last name");
         clearElement(spans[1]);
 
-        if (!input.value.match(myRe[1])) {
+        if (input.value == "") {
+            var warningText = document.createTextNode("This field is required");
+            spans[1].appendChild(warningIcon);
+            spans[1].appendChild(warningText);
+        }
+        else if (!input.value.match(myRe[1])) {
             var warningText = document.createTextNode(warnings[1]);
+            spans[1].appendChild(warningIcon);
             spans[1].appendChild(warningText);
         }
 
@@ -79,8 +99,14 @@ function validateInput(e) {
         console.log("im checking email");
         clearElement(spans[2]);
 
-        if (!input.value.match(myRe[2])) {
+        if (input.value == "") {
+            var warningText = document.createTextNode("This field is required");
+            spans[2].appendChild(warningIcon);
+            spans[2].appendChild(warningText);
+        }
+        else if (!input.value.match(myRe[2])) {
             var warningText = document.createTextNode(warnings[2]);
+            spans[2].appendChild(warningIcon);
             spans[2].appendChild(warningText);
         }
 
