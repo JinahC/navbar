@@ -10,7 +10,7 @@
                 <a class="nav-link active" href="index.php">about</a>
             </li>
             <li class="nav-item pb-1">
-                <a class="nav-link" href="#">menu</a>
+                <a class="nav-link" href="../navbar/index.php#menu">menu</a>
             </li>
             <li class="nav-item pb-1">
                 <a class="nav-link" href="events.php">events</a>
@@ -19,7 +19,7 @@
                 <a class="nav-link" href="reservations.php">reservations</a>
             </li>
             <li class="nav-item pb-1">
-                <a class="nav-link" href="#">newsletter</a>
+                <a class="nav-link" href="../navbar/index.php#newsletter">newsletter</a>
             </li>
             <li class="nav-item pb-1">
                 <a class="nav-link" href="store.php">store</a>

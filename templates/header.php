@@ -32,10 +32,10 @@
         </div>
         <ul class="nav col-lg-10 col-md-8 justify-content-around">
             <li class="nav-item"><a class="nav-link" href="about.php">about</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php/#menu">menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="../navbar/index.php#menu">menu</a></li>
             <li class="nav-item"><a class="nav-link" href="reservations.php">reservations</a></li>
             <li class="nav-item"><a class="nav-link" href="events.php">events</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php/#newsletter">newsletter</a></li>
+            <li class="nav-item"><a class="nav-link" href="../navbar/index.php#newsletter">newsletter</a></li>
             <li class="nav-item"><a class="nav-link" href="store.php">store</a></li>
             <li class="nav-item"><a class="nav-link" href="mailto:info@navbar.com">contact</a></li>
         </ul>
