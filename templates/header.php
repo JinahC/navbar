@@ -8,7 +8,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Rowdies&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Rowdies:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
@@ -30,7 +30,7 @@
                 <img class="logo" src="../navbar/img/navbar-logo.png" alt="navbar logo">
             </a>
         </div>
-        <ul class="nav col-lg-8 justify-content-around">
+        <ul class="nav col-lg-10 col-md-8 justify-content-around">
             <li class="nav-item"><a class="nav-link" href="about.php">about</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php/#menu">menu</a></li>
             <li class="nav-item"><a class="nav-link" href="reservations.php">reservations</a></li>

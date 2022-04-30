@@ -6,10 +6,10 @@ function display_menu() {
     database_connect();
 
     echo "
-    <h2 class='font-brand'>menu</h3>
+    <h2 class='font-brand mb-3'>menu</h3>
     <div class='row'>
         <div class='col-lg-6'>
-            <h3 class='font-display'>food</h3>
+            <h3 class='menu-type'>food</h3>
     ";
 
     $results = database_grabMenuItems("food");
@@ -27,7 +27,7 @@ function display_menu() {
     echo "
     </div>
     <div class='col-lg-6'>
-        <h3 class='font-display'>drinks</h3>
+        <h3 class='font-display menu-type'>drinks</h3>
     ";
 
     $results = database_grabMenuItems("drinks");
@@ -58,7 +58,7 @@ function display_events() {
         <div class='col-lg-4 col-md-6 col-sm-12 my-3 text-center'>
             <img src='{$events['event_img']}' class='bordered-img'>
             <h3 class='font-brand'>{$events['event_name']}</h3>
-            <p class='font-display'>{$events['event_day']} @ {$events['event_time']}</p>
+            <p class='font-display larger'>{$events['event_day']} @ {$events['event_time']}</p>
         </div>
         ";
     }
@@ -77,10 +77,10 @@ function display_store() {
 
     while ($store = mysqli_fetch_assoc($results)) {
         echo "
-        <div class='col-lg-4 col-md-6 col-sm-12 my-3 text-center'>
+        <div class='col-lg-4 col-md-6 col-sm-12 my-3 pb-4 text-center'>
             <img src='{$store['store_item_img']}' class='bordered-img'>
             <h3 class='font-brand'>{$store['store_item_name']}</h3>
-            <p class='font-display'>{$store['store_item_price']}</p>
+            <p class='font-display larger'>{$store['store_item_price']}</p>
             <a class='btn d-block' href='#' id='store-item-{$store['store_item_id']}'>add to cart</a>
         </div>
         ";

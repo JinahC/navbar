@@ -11,7 +11,7 @@ include "functions/display.php"
 </div>
 
 <!-- store items -->
-<div class="container">
+<div class="container py-3">
     <?php display_store(); ?>
 </div>
 

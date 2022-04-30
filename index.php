@@ -15,7 +15,7 @@ include "functions/display.php";
 <div class="container my-4">
     <div class="row align-items-center">
         <hr class="col">
-        <div class="col-lg-6 col-sm-12 my-4">  
+        <div class="col-lg-6 col-md-9 col-sm-12 my-4">  
             <p class="font-display filler-text text-left">explore the</p>
             <p class="font-display filler-text text-right">unknown</p>
         </div>
@@ -29,20 +29,20 @@ include "functions/display.php";
 </div>
 
 <!-- menu -->
-<div class="bg-ocean" id="menu">
+<div class="bg-ocean py-4" id="menu">
     <div class="container text-center">
         <?php display_menu(); ?>
     </div>
 </div>
 
 <!-- boxes -->
-<div class="container">
+<div class="container p-4">
     <div class="row">
         <!-- book a table -->
-        <div class="col-lg-4 col-sm-12 pr-0">
+        <div class="col-lg-4 col-sm-12 px-0 pb-4">
             <div class="box">
                 <div class="box-img-border">
-                    <img class="box-img" src="img/boxes-book.jpg">
+                    <img class="box-img d-lg-none d-sm-block" src="img/boxes-book.jpg">
                 </div>
                 <div class="box-text">
                     <h3 class="box-title font-brand">book a table</h3>
@@ -52,17 +52,19 @@ include "functions/display.php";
                 </div>
             </div>
         </div>
-        <div class="col-lg-8 col-sm-12 pl-0">
+
+        <div class="col-lg-8 col-sm-12 d-lg-block d-none p-0">
             <img class="box-img-adj" src="img/boxes-book.jpg">
         </div>
         <!-- plan a party -->
-        <div class="col-lg-8 col-sm-12 pr-0">
+        <div class="col-lg-8 col-sm-12 d-lg-block d-none p-0">
             <img class="box-img-adj" src="img/boxes-party.jpg">
         </div>
-        <div class="col-lg-4 col-sm-12 pl-0">
+
+        <div class="col-lg-4 col-sm-12 px-0 pb-4">
             <div class="box">
                 <div class="box-img-border">
-                    <img class="box-img" src="img/boxes-party.jpg">
+                    <img class="box-img d-lg-none d-sm-block" src="img/boxes-party.jpg">
                 </div>
                 <div class="box-text">
                     <h3 class="box-title font-brand">plan a party</h3>
@@ -73,10 +75,10 @@ include "functions/display.php";
             </div>
         </div>
         <!-- events -->
-        <div class="col-lg-4 col-sm-12 pr-0">
+        <div class="col-lg-4 col-sm-12 px-0 pb-4">
             <div class="box">
                 <div class="box-img-border">
-                    <img class="box-img" src="img/boxes-events.jpg">
+                    <img class="box-img d-lg-none d-sm-block" src="img/boxes-events.jpg">
                 </div>
                 <div class="box-text">
                     <h3 class="box-title font-brand">events</h3>
@@ -86,17 +88,19 @@ include "functions/display.php";
                 </div>
             </div>
         </div>
-        <div class="col-lg-8 col-sm-12 pl-0">
+
+        <div class="col-lg-8 col-sm-12 d-lg-block d-none p-0">
             <img class="box-img-adj" src="img/boxes-events.jpg">
         </div>
         <!-- store -->
-        <div class="col-lg-8 col-sm-12 pr-0">
+        <div class="col-lg-8 col-sm-12 d-lg-block d-none p-0">
             <img class="box-img-adj" src="img/boxes-store.jpg">
         </div>
-        <div class="col-lg-4 col-sm-12 pl-0">
+
+        <div class="col-lg-4 col-sm-12 px-0 pb-4">
             <div class="box">
                 <div class="box-img-border">
-                    <img class="box-img" src="img/boxes-store.jpg">
+                    <img class="box-img d-lg-none d-sm-block" src="img/boxes-store.jpg">
                 </div>
                 <div class="box-text">
                     <h3 class="box-title font-brand">store</h3>
@@ -131,4 +135,6 @@ include "functions/display.php";
     </form>
 </div>
 
-<?php include "templates/footer.php" ?>
+<div class="bg-ocean">
+    <?php include "templates/footer.php" ?>
+</div>
