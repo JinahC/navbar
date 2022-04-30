@@ -115,7 +115,7 @@ include "functions/display.php";
     
 <!-- newsletter -->
 <div class="bg-ocean" id="newsletter">
-    <form action="functions/newsletter-signup.php" method="POST" class="pt-4">
+    <form action="newsletter-signup.php" method="POST" class="pt-4">
         <h3 class="text-center">subscribe to our newsletter</h3>
         <h3 class="font-brand text-center text-capitalize">the <span class="text-uppercase">navbar</span> journal</h3>
         
