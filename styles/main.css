@@ -118,7 +118,7 @@ header {
 .icon-responsive {
   display: none; }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 992px) {
   header .nav {
     display: none; }
 
