@@ -15,6 +15,10 @@
     }
 
     p {
+        font-size: 20px;
+    }
+
+    p.larger {
         font-size: 28px;
     }
 
@@ -107,10 +111,11 @@
     header {
         background-color: $dark-blue;
         margin: 0;
-        position: absolute;
-        top: 0;
-        z-index: 10;
+        // position: absolute;
+        // top: 0;
+        // z-index: 10;
         width: 100%;
+        height: 20%;
     }
 
     .nav-item {
@@ -158,15 +163,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        // filter: blur(5px);
     }
 
     .billboard-full {
-        height: 100%;
+        height: 80%;
     }
 
     .billboard-half {
-        height: 75%;
+        height: 55%;
     }
 
     .billboard-text {
@@ -179,7 +183,12 @@
 
     .billboard-text .font-display,
     .billboard-text .font-brand {
-        font-size: 100px;
+        font-size: 13vw;
+    }
+
+    .billboard-half .billboard-text .font-display,
+    .billboard-half .billboard-text .font-brand {
+        font-size: 8vh;
     }
 
     #billboard-home {
@@ -209,27 +218,22 @@
         line-height: 40px;
     }
 
-    // .filler-top {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    // }
-
-    // .filler-bottom {
-    //     position: absolute;
-    //     bottom: 0;
-    //     right: 0;
-    // }
+    // responsive behavior
+    @media screen and (max-width: $sm) {
+        .filler-text {
+            font-size: 69px;
+        }
+    }
 }
 
 @mixin button {
     .btn {
-        width: 223px;
+        width: 210px;
         padding: 10px;
         background-color: white;
         color: $dark-blue;
         font-family: 'Rowdies';
-        font-size: 26px;
+        font-size: 23px;
         text-transform: uppercase;
         border: 3px solid $dark-blue;
         border-radius: 17px;
@@ -243,20 +247,51 @@
         text-decoration: none;
         transform: translate(8px, 8px);
         filter: none;
-        box-shadow: 0 0 20px $white, 0 0 15px $dark-blue, 0 0 25px $dark-blue;
+        box-shadow: 0 0 20px lightblue, 0 0 40px rgba(5, 11, 82, 0.3);
         color: $dark-blue;
     }
 }
 
 @mixin banner {
     .banner {
-        height: 60%;
+        height: 55%;
     }
 
     .banner-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+@mixin menu {
+    .menu-type {
+        font-family: $sacramento;
+        font-size: 62px;
+        line-height: 75px;
+        border: 2px solid $white;
+    }
+
+    .menu-item {
+        margin: auto auto 24px;
+    }
+
+    .menu-item-name {
+        font-family: $rowdies;
+        font-size: 23px;
+        text-transform: lowercase;
+        margin-bottom: 0;
+    }
+
+    .menu-item-ingredients {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .menu-item-price {
+        font-family: $rowdies;
+        margin-bottom: 0;
+        font-weight: lighter;
     }
 }
 
@@ -299,6 +334,7 @@
 
     .box-desc {
         text-shadow: 0px 4px 4px #000000;
+        font-size: 25px;
     }
 
     .box-hr {
@@ -310,7 +346,7 @@
 
 @mixin form {
     form {
-        width: 50%;
+        width: 70%;
         margin: auto;
     }
 
@@ -330,13 +366,29 @@
         padding-left: 5px;
         font-size: 20px;
     }
+    
+    // responsive behavior
+    @media screen and (min-width: $lg) {
+        form {
+            width: 50%;
+        }
+    }
 }
 
 @mixin bordered {
     .bordered-img {
         border: 10px solid $white;
-        width: 350px;
-        height: 350px;
+        width: 290px;
+        height: 290px;
+        margin: auto;
+        margin-bottom: 19px;
+        object-fit: cover;
+    }
+
+    .bordered-img-full {
+        border: 10px solid $white;
+        width: 100%;
+        height: 100%;
         margin: auto;
         margin-bottom: 19px;
         object-fit: cover;
