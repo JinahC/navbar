@@ -9,6 +9,9 @@ body {
   padding: 0; }
 
 p {
+  font-size: 20px; }
+
+p.larger {
   font-size: 28px; }
 
 a {
@@ -43,8 +46,16 @@ hr {
 
 .bordered-img {
   border: 10px solid #FFF;
-  width: 350px;
-  height: 350px;
+  width: 290px;
+  height: 290px;
+  margin: auto;
+  margin-bottom: 19px;
+  object-fit: cover; }
+
+.bordered-img-full {
+  border: 10px solid #FFF;
+  width: 100%;
+  height: 100%;
   margin: auto;
   margin-bottom: 19px;
   object-fit: cover; }
@@ -84,10 +95,8 @@ hr {
 header {
   background-color: #050B52;
   margin: 0;
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  width: 100%; }
+  width: 100%;
+  height: 20%; }
 
 .nav-item {
   font-family: "Rowdies", cursive;
@@ -123,10 +132,10 @@ header {
   position: relative; }
 
 .billboard-full {
-  height: 100%; }
+  height: 80%; }
 
 .billboard-half {
-  height: 75%; }
+  height: 55%; }
 
 .billboard-text {
   text-align: center;
@@ -137,7 +146,11 @@ header {
 
 .billboard-text .font-display,
 .billboard-text .font-brand {
-  font-size: 100px; }
+  font-size: 13vw; }
+
+.billboard-half .billboard-text .font-display,
+.billboard-half .billboard-text .font-brand {
+  font-size: 8vh; }
 
 #billboard-home {
   background-image: url("../img/billboard-ship-in-the-stars.jpg"); }
@@ -158,13 +171,16 @@ header {
   font-size: 90px;
   line-height: 40px; }
 
+@media screen and (max-width: 576px) {
+  .filler-text {
+    font-size: 69px; } }
 .btn {
-  width: 223px;
+  width: 210px;
   padding: 10px;
   background-color: white;
   color: #050B52;
   font-family: 'Rowdies';
-  font-size: 26px;
+  font-size: 23px;
   text-transform: uppercase;
   border: 3px solid #050B52;
   border-radius: 17px;
@@ -177,19 +193,43 @@ header {
   text-decoration: none;
   transform: translate(8px, 8px);
   filter: none;
-  box-shadow: 0 0 20px #FFF, 0 0 15px #050B52, 0 0 25px #050B52;
+  box-shadow: 0 0 20px lightblue, 0 0 40px rgba(5, 11, 82, 0.3);
   color: #050B52; }
 
 .banner {
-  height: 60%; }
+  height: 55%; }
 
 .banner-img {
   width: 100%;
   height: 100%;
   object-fit: cover; }
 
+.menu-type {
+  font-family: "Sacramento", cursive;
+  font-size: 62px;
+  line-height: 75px;
+  border: 2px solid #FFF; }
+
+.menu-item {
+  margin: auto auto 24px; }
+
+.menu-item-name {
+  font-family: "Rowdies", cursive;
+  font-size: 23px;
+  text-transform: lowercase;
+  margin-bottom: 0; }
+
+.menu-item-ingredients {
+  font-size: 18px;
+  margin-bottom: 0; }
+
+.menu-item-price {
+  font-family: "Rowdies", cursive;
+  margin-bottom: 0;
+  font-weight: lighter; }
+
 form {
-  width: 50%;
+  width: 70%;
   margin: auto; }
 
 label {
@@ -207,6 +247,9 @@ input[type=text] {
   padding-left: 5px;
   font-size: 20px; }
 
+@media screen and (min-width: 992px) {
+  form {
+    width: 50%; } }
 .box {
   padding: 10px;
   border: 2px solid #FFF;
@@ -238,7 +281,8 @@ input[type=text] {
   text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.62); }
 
 .box-desc {
-  text-shadow: 0px 4px 4px #000000; }
+  text-shadow: 0px 4px 4px #000000;
+  font-size: 25px; }
 
 .box-hr {
   width: 74px;
