@@ -401,6 +401,36 @@
     }
 }
 
+@mixin overlap {
+    .overlap-container {
+        height: 75%;
+        position: relative;
+    }
+
+    .overlap-text-box {
+        width: 75%;
+        min-height: 235px;
+    }
+
+    .overlap-text {
+        font-size: 30px;
+    }
+
+    .overlap-img-box {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 70%;
+        height: 70%;
+    }
+
+    .overlap-img {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
 // FOOTER
 @mixin footer {
     .waves {
