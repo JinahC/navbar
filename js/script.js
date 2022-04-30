@@ -55,7 +55,7 @@ function validateInput(e) {
 
     var spans = document.getElementsByClassName("input-warning");
     var warnings = ["Please enter only letters", "Please enter only letters", "Please enter a vaild email address"];
-    var myRe = [/^[A-Za-z]+$/, /^[A-Za-z]+$/, /[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]+(\.[A-Za-z])*/];
+    var myRe = [/^[A-Za-z]+$/, /^[A-Za-z]+$/, /^[A-Za-z0-9]+@[A-Za-z]+[\.A-Za-z]+$/];
 
     console.log("second check for id: " + inputID);
     // checks first name
