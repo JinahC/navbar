@@ -70,7 +70,7 @@ include "functions/display.php";
                     <h3 class="box-title font-brand">plan a party</h3>
                     <hr class="box-hr">
                     <p class="box-desc">have a stellar party at our bar</p>
-                    <a href="#" class="btn d-block">plan</a>
+                    <a href="../navbar/reservations.php#plan-a-party" class="btn d-block">plan</a>
                 </div>
             </div>
         </div>
