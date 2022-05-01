@@ -7,7 +7,7 @@
     <div class="">
         <ul class="nav">
             <li class="nav-item pb-1">
-                <a class="nav-link active" href="index.php">about</a>
+                <a class="nav-link active" href="about.php">about</a>
             </li>
             <li class="nav-item pb-1">
                 <a class="nav-link" href="../navbar/index.php#menu">menu</a>
