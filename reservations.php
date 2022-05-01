@@ -11,14 +11,14 @@ include "templates/header.php";
 </div>
 
 <!-- book a table -->
-<div class="container py-3 text-center">
+<div class="container py-3 text-center" id="book-a-table">
     <h2 class="font-brand">book a table</h2>
     <hr>
     <p>Need to secure a table for a fun night out at sea? We offer table reservations for parties of 2 to 8 guests. Book a table below!</p>
     <a class="btn d-block my-3" href="#">find a table</a>
 </div>
 <!-- plan a party -->
-<div class="bg-ocean">
+<div class="bg-ocean" id="plan-a-party">
     <div class="container py-3">
         <h2 class="font-brand text-center">plan a party</h2>
         <hr>
