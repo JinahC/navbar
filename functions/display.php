@@ -81,7 +81,7 @@ function display_store() {
             <img src='{$store['store_item_img']}' class='bordered-img'>
             <h3 class='font-brand'>{$store['store_item_name']}</h3>
             <p class='font-display larger'>{$store['store_item_price']}</p>
-            <a class='btn d-block' href='#' id='store-item-{$store['store_item_id']}'>add to cart</a>
+            <a class='btn d-block' href='javascript:void(0);' id='store-item-{$store['store_item_id']}'>add to cart</a>
         </div>
         ";
     }

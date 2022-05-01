@@ -15,7 +15,7 @@ include "templates/header.php";
     <h2 class="font-brand">book a table</h2>
     <hr>
     <p>Need to secure a table for a fun night out at sea? We offer table reservations for parties of 2 to 8 guests. Book a table below!</p>
-    <a class="btn d-block my-3" href="#">find a table</a>
+    <a class="btn d-block my-3" href="javascript:void(0);">find a table</a>
 </div>
 <!-- plan a party -->
 <div class="bg-ocean" id="plan-a-party">
@@ -49,7 +49,7 @@ include "templates/header.php";
                 <img class="bordered-img-full" src="img/reservations-the-works.jpg">
             </div>
         </div>
-        <a href="#" class="btn d-block my-3">inquire now</a>
+        <a href="javascript:void(0);" class="btn d-block my-3">inquire now</a>
     </div>
 </div>
 

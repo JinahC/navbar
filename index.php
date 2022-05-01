@@ -48,7 +48,7 @@ include "functions/display.php";
                     <h3 class="box-title font-brand">book a table</h3>
                     <hr class="box-hr">
                     <p class="box-desc">reserve a seat for your trip to the bar</p>
-                    <a href="#" class="btn d-block">reserve</a>
+                    <a href="javascript:void(0);" class="btn d-block">reserve</a>
                 </div>
             </div>
         </div>
